@@ -11,7 +11,6 @@ public class no1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Menerima input tiga angka
         System.out.print("Masukkan angka pertama: ");
         int angka1 = scanner.nextInt();
 
@@ -21,14 +20,12 @@ public class no1 {
         System.out.print("Masukkan angka ketiga: ");
         int angka3 = scanner.nextInt();
 
-        // Menggabungkan tiga angka menjadi satu angka
-        int combinedNumber = angka1 * 100 + angka2 * 10 + angka3;
+        int N = angka1 * 100 + angka2 * 10 + angka3;
 
-        // Memeriksa apakah angka tersebut merupakan ribuan
-        if (combinedNumber >= 1000 && combinedNumber <= 9999) {
-            System.out.println("Angka " + combinedNumber + " adalah angka ribuan.");
+        if (N >= 1000 && N <= 9999) {
+            System.out.println("Angka " + N + " adalah angka ribuan.");
         } else {
-            System.out.println("Angka " + combinedNumber + " bukan angka ribuan.");
+            System.out.println("Angka " + N + " bukan angka ribuan.");
         }
 
         scanner.close();
